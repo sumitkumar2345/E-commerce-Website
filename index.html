@@ -1,0 +1,250 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping site for Smart Watch &amp; More. Best offers!    
+    </title>
+    <link rel="icon" href="\img\flipkart.png" type="image/x-icon">
+    <link rel="style.css"href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.sim.min.js"></script>
+        <script src="cart.js"></script>
+    <script src="https://kit.fontawesome.com/3077a82ac1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://localhost/phpmyadmin/index.php?route=/sql&pos=0&db=flipkart-clone&table=user-data"></script>
+</head>
+<body>
+    <!----Header Seciton  -->
+    <header>
+        <div class ="header-left">
+            <a href="#">flipkart</a>
+            <div class ="header-left-p">
+                <p><a href="#">Explore</a><span><b><i>plus<i class="fa-solid fa-plus"></i></i></b></span> </p>
+            </div>
+        </div>
+        <div class ="header-center">
+            <input class="header-center-input" type="text" placeholder="Search for pruducts, Brands and more"><i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <!---login Button,kart and more-->
+        <div class="login">
+            <a href="#" class="login_btn">Login</a>
+            <div class="login_dropdown none">
+                <ul class="login_dropdown_list">
+                    <li class="login_drop_li sign_li flex">
+                        <p class="new_login">New Customer> </p>
+                        <a href="#" class="sign_up">sign_up</a>
+                    </li>
+                    <li class="login_drop_li"><i class="fa-solid fa-circle-user"></i>My Profile</li>
+                    <li class="login_drop_li"><i class="fa-solid fa-square-plus"></i>Flipkart Plus Zone</li>
+                    <li class="login_drop_li"><i class="fa-solid fa-bag-shopping"></i>Order</li>
+                    <li class="login_drop_li"><i class="fa-solid fa-heart"></i>Wishtlist</li>
+                    <li class="login_drop_li"><i class="fa-solid fa-money-bill-1"></i>Rewards</li>
+                    <li class="login_drop_li"><i class="fa-solid fa-gift"></i>Gift Cards</li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-----more----->
+        <div class="more">
+            <span class="more_lan">More<i class="fa-solid fa-angle-down"></i></span>
+            <div class="more_dropdown none">
+                <div class="pointer more_pointer"></div>
+                <ul class="login_dropdown_list">
+                    <li class="login_drop_li"><i class="more-icon fa fa_bell"></i>Notification preferences</li>
+                    <li class="login_drop_li"><i class="more-icon fa fa-shopping-watch"></i>Sell On Flipkart</li>
+                    <li class="login_drop_li"><i class="more-icon fa fa-question"></i>24x7 Customer Care</li>
+                    <li class="login_drop_li"><i class="more-icon fa fa-line-chart"></i><a href="https://advertising.flipkart.com"></a></li>
+                    <li class="login_drop_li"><i class="more-icon fa fa-download"></i><a href="https://www.flipkart.com/watch"></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-----making cart----->
+        <span class="cart_lan"><i class="fa-solid fa-cart-shopping">Cart</i></span>
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <!--content-->
+            <div class="cart-content">
+                <img src="\img\OIP.jpg" class="cart-image">
+                <div class="detail-box">
+                    <div class="cart-product-title">Product1</div>
+                    <div class="cart-price">500</div>
+                    <input type="number" value="1" class="cart-quantity"></input>
+                </div>
+                <!--remove a product from cart-->
+                <i class="fa-solid fa-trash cart-remove"></i>
+
+            </div>
+            <!---total-->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price"></div>
+            </div>
+            <!---buy button-->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <i class="fa-solid fa-rectangle-xmark" id="close-cart"></i>
+        </div>
+    
+    </header>
+    <!-----category selection----->
+    <section>
+        <div class="category-row">
+            <div class="category-col">
+                <img src="\img\OIP.jpg" alt="">
+                <h5 class="dropbtn">Watch</h5>
+                <div class="dropdown-content">
+                    <div class="header"></div>
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="product-title">Electronics</h3>
+                            <a href="#">Smart Watch</a>
+                            <a href="#">Camera</a>
+                            <a href="#">smart Home Automation</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-----Banner Section----->
+    <section>
+        <div id="carouselExampleslideonly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="\img\download.jpg" alt="first slide">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----common for item----->
+    <section>
+        <br class="card">
+            <div class="common-heading">
+                <div class="common-heading-left">
+                    <h1>Best valuable product</h1><i class="fa-solid fa-tmer"></i>
+                    <h2>Best Battery SmartWatch</h2><i class="fa-solid fa-tmer"></i>
+                </div>
+                <div class="commn-heading-right">
+                    <button>view all</button>
+                </div>
+            </div>
+            <br class="common-row-col-watch">
+                <br class="common-col">
+                    <img src="\img\OIP.jpg "alt="" class="product-mg">
+                    <br>Fire-Boltt Rise ? BT Calling, 1.85",<br>Voice Assistance & 123 Sports Single BT Connection SmartWatch(pink Gold Strap, Free size)</h3>
+                    <h1>Battery Runtime: Upto 15 days</h1>
+                    
+                    <h2>Top Brands</h2>
+                    <h3 class="price">Starts from <i class="fa-solid fa-indian-rupee-sign"></i>500</h3>
+                    <i class="fa-solid fa-bag-shopping" id="add-cart"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------footer-->
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col-1">
+                <div class="footer-heading">
+                    <p>ABOUT</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Contact Us</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Flipkart Stories</a>
+                    <a href="#">Press</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Flipkart WholeSales</a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <div class="footer-heading">
+                    <p>HELP</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Payments</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Cancellation & Return</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Press</a>
+                    <a href="#">Report infringment</a>
+                </div>
+            </div>
+            <div class="footer-col-3">
+                <div class="footer-heading">
+                    <p>POLICY</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Return Policy</a>
+                    <a href="#">Term of Use</a>
+                    <a href="#">Security</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Sitmap</a>
+                    <a href="#">ERP Compliance</a>
+                </div>
+            </div>
+            <div class="footer-col-4">
+                <div class="footer-heading">
+                    <p>SOCIAL</p>
+                </div>
+                <div class="footer-list">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Youtube</a>
+                </div>
+            </div>
+            <div class="footer-col-5">
+                <div class="footer-heading">
+                    <p>MAIL US</p>
+                </div>
+                <div class="footer-list">
+                    <p>Flipkart Internet Private Limited,
+                        Buildings Alyssa, Begonia & 
+                        Clove Embassy Tech Village,
+                        Outer Ring Road, Devarabeesanahalli Village,
+                        Bengaluru, 560103,
+                        Karnataka, India</p>
+                </div>
+            </div>
+            <div class="footer-col-6">
+                <div class="footer-heading">
+                    <p>Registered Office Address</p>
+                </div>
+                <div class="footer-list">
+                    <p>Flipkart Internet Private Limited,</p>
+                    <p>Buildings Alyssa, Begonia & </p>    
+                    <p>Clove Embassy Tech Village,</p>    
+                    <p>Outer Ring Road, Devarabeesanahalli Village,</p>    
+                    <p>Bengaluru, 560103,</p>    
+                    <p>Karnataka, India</p>   
+                    <p>CIN:U51109KA2012PTC066107</p>
+                    <p>Telephone:<span>1800 202 9898</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-row-2">
+            <div class="footer-row2-col">
+                <p><i class="fas-fa-shopping-bag">Sell On Flipkart</i></p>
+            </div>
+            <div class="footer-row2-col">
+                <p><i class="fas-fa-star">Advertise</i></p>
+            </div>
+            <div class="footer-row2-col">
+                <p><i class="fas-fa-gift">Gift Cards</i></p>
+            </div>
+            <div class="footer-row2-col">
+                <p><i class="fas-fa-question-circle">Help Center</i></p>
+            </div>
+            <div class="footer-row2-col">
+                <p>@ 2007-2022 Flipkart.com</p>
+            </div>
+            <div class="footer-row2-col">
+                <img src="\img\OIP (1).jpg" alt="payments">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
